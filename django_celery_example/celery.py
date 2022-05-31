@@ -28,3 +28,8 @@ def divide(x, y):
     import time
     time.sleep(5)
     return x / y
+
+
+@app.task
+def sum_1(x: int) -> int:
+    return x + 1
